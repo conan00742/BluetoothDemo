@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_re_scan"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="re-scan" />
+
+        
+        <ProgressBar
+            android:id="@+id/loading_devices_progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="30dp" 
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"/>
+        
+    </LinearLayout>
+
+    
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/devices_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
